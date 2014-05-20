@@ -23,27 +23,28 @@ if(isset($layout)) {
 	//load template as per settings
 	switch($layout) {
 		case "full-width":
-			get_template_part( 'layouts/full', 'width' ); 
+			get_template_part( 'layouts/full', 'width' );
 			break;
 		case "sidebar-content":
-			get_template_part( 'layouts/sidebar', 'content' ); 
+			get_template_part( 'layouts/sidebar', 'content' );
 			break;
 		case "content-sidebar":
 			get_template_part( 'layouts/content', 'sidebar' );
 			break;
-		case "content-sidebar-sidebar":			
-			get_template_part( 'layouts/content', 'sidebar-sidebar' ); 			
-			break;	
-		case "sidebar-sidebar-content":			
-			get_template_part( 'layouts/sidebar', 'sidebar-content' ); 			
-			break;		
-		case "sidebar-content-sidebar":			
-			get_template_part( 'layouts/sidebar', 'content-sidebar' ); 			
+		case "content-sidebar-sidebar":
+			get_template_part( 'layouts/content', 'sidebar-sidebar' );
+			break;
+		case "sidebar-sidebar-content":
+			get_template_part( 'layouts/sidebar', 'sidebar-content' );
+			break;
+		case "sidebar-content-sidebar":
+			get_template_part( 'layouts/sidebar', 'content-sidebar' );
 			break;
 		default:
 			get_template_part( 'layouts/content', 'sidebar' );
-	}	
+	}
 } else {
+  echo 'hello world';
 	//load default template content/sidebar
 	get_template_part( 'layouts/content', 'sidebar' );
 }
