@@ -44,7 +44,6 @@ if(isset($layout)) {
 			get_template_part( 'layouts/content', 'sidebar' );
 	}
 } else {
-  echo 'hello world';
 	//load default template content/sidebar
 	get_template_part( 'layouts/content', 'sidebar' );
 }
